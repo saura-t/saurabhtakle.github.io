@@ -3,7 +3,7 @@ import React from 'react';
 function App() {
   return (
     <React.Fragment>
-      Portfolio yet to be created!
+      Hello!
     </React.Fragment>
   );
 }
