@@ -1,8 +1,24 @@
 import React, {useState} from 'react';
 import { HashRouter, Route, Link } from "react-router-dom";
-import {Grid, Typography, List, ListItem, Button, Divider, CssBaseline, Paper, Container, Avatar } from '@material-ui/core';
+import {Grid, Typography, List, ListItem, Button, Divider, CssBaseline, Paper, Container, Avatar, makeStyles } from '@material-ui/core';
+import image from './Assets/website_image.jpg';
+
+const useStyles = makeStyles((theme) => ({
+  root: {
+    display: 'flex',
+    '& > *': {
+      margin: theme.spacing(1),
+    },
+  },
+  large: {
+    width: theme.spacing(15),
+    height: theme.spacing(15),
+  },
+}));
 
 function App() {
+  const classes = useStyles();
+
   return (
     <React.Fragment>
       <CssBaseline />
@@ -13,10 +29,9 @@ function App() {
               <List>
                 <ListItem style={{ justifyContent: "center" }}>
                   <Avatar
-                    alt = "Saurabh Takle"
-                    variant = "circle"
-                    src = 'src/Assets/website_image.jpg'>
-
+                    className={classes.large}
+                    src={image}
+                    alt="Saurabh Takle">
                   </Avatar>
                 </ListItem>
                 <ListItem style={{ textAlign: "center", justifyContent: "center" }}>
