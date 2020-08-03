@@ -1,7 +1,28 @@
 import React, {useState} from 'react';
 import { HashRouter, Route, Link } from "react-router-dom";
-import {Grid, Typography, List, ListItem, Button, Divider, CssBaseline, Paper, Container, Avatar, makeStyles } from '@material-ui/core';
+import {Grid, 
+  Typography, 
+  List, 
+  ListItem, 
+  Button, 
+  Divider, 
+  CssBaseline, 
+  Paper, 
+  Container, 
+  Avatar, 
+  makeStyles, 
+  ListItemText,
+  ListItemAvatar
+} from '@material-ui/core';
 import image from './Assets/website_image.jpg';
+
+import About from './components/About';
+import Contact from './components/Contact';
+import Education from './components/Education';
+import Experience from './components/Experience';
+import Home from './components/Home';
+import Projects from './components/Projects';
+import Skills from './components/Skills';
 
 const useStyles = makeStyles((theme) => ({
   root: {
@@ -23,83 +44,99 @@ function App() {
     <React.Fragment>
       <CssBaseline />
       <Container>
-        <Grid>
+        <Grid container spacing={3}>
           <HashRouter basename = "/">
             <Grid item xs={12} sm={2}>
               <List>
-                <ListItem style={{ justifyContent: "center" }}>
-                  <Avatar
-                    className={classes.large}
-                    src={image}
-                    alt="Saurabh Takle">
-                  </Avatar>
-                </ListItem>
-                <ListItem style={{ textAlign: "center", justifyContent: "center" }}>
-                  <Typography variant = "h4">Saurabh Takle</Typography>
+                <ListItem style={{display: "flex", flexDirection: "column"}}>
+                  <Avatar alt="Saurabh Takle" src={image} className={classes.large} />
+                  <Typography variant="h4" align='center'>Saurabh Takle</Typography>
+                  <Typography>• Student •</Typography>
                 </ListItem>
                 <Divider/>
-                <ListItem style={{ justifyContent: "center" }}>
+                <ListItem >
                   <Button
                     color="primary"
                     to="/"
                     component={Link}
                     variant="text"
                   >
+                    Home
+                  </Button>
+                </ListItem>
+                <ListItem >
+                  <Button
+                    color="primary"
+                    to="/about"
+                    component={Link}
+                    variant="text"
+                  >
                     About
                   </Button>
                 </ListItem>
-                <ListItem style={{ justifyContent: "center" }}>
+                <ListItem >
                   <Button
                     color="primary"
-                    to="/"
+                    to="/experience"
                     component={Link}
                     variant="text"
                   >
                     Experience
                   </Button>
                 </ListItem>
-                <ListItem style={{ justifyContent: "center" }}>
+                <ListItem >
                   <Button
                     color="primary"
-                    to="/"
+                    to="/projects"
+                    component={Link}
+                    variant="text"
+                  >
+                    Projects
+                  </Button>
+                </ListItem>
+                <ListItem >
+                  <Button
+                    color="primary"
+                    to="/skills"
                     component={Link}
                     variant="text"
                   >
                     Skills
                   </Button>
                 </ListItem>
-                <ListItem style={{ justifyContent: "center" }}>
+                <ListItem >
                   <Button
                     color="primary"
-                    to="/"
+                    to="/education"
                     component={Link}
                     variant="text"
                   >
                     Education
                   </Button>
                 </ListItem>
-                <ListItem style={{ justifyContent: "center" }}>
+                <ListItem >
                   <Button
                     color="primary"
-                    to="/"
+                    to="/contact"
                     component={Link}
                     variant="text"
                   >
                     Contact
                   </Button>
                 </ListItem>
-                <ListItem style={{ justifyContent: "center" }}>
-                  <Button
-                    color="primary"
-                    to="/"
-                    component={Link}
-                    variant="text"
-                  >
-                    About
-                  </Button>
-                </ListItem>
               </List>
             </Grid>
+            <Grid item xs={12} sm={9}>
+                <Paper style={{ padding: "20px" }}>
+                  <Route exact path="/" component={Home} />
+                  <Route path="/about" component={About} />
+                  <Route path="/experience" component={Experience} />
+                  <Route path="/projects" component={Projects} />
+                  <Route path="/skills" component={Skills} />
+                  <Route path="/education" component={Education} />
+                  <Route path="/contact" component={Contact} />
+                </Paper>
+              </Grid>
           </HashRouter>
         </Grid>
       </Container>
