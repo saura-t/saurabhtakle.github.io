@@ -1,6 +1,6 @@
 import React, {useState} from 'react';
 import { HashRouter, Route, Link } from "react-router-dom";
-import {Grid, Typography, List, ListItem, Button, Divider, CssBaseline, Paper, Container } from '@material-ui/core';
+import {Grid, Typography, List, ListItem, Button, Divider, CssBaseline, Paper, Container, Avatar } from '@material-ui/core';
 
 function App() {
   return (
@@ -9,10 +9,79 @@ function App() {
       <Container>
         <Grid>
           <HashRouter basename = "/">
-            <Grid>
+            <Grid item xs={12} sm={2}>
               <List>
-                <ListItem>
-                  <Typography>Saurabh Takle</Typography>
+                <ListItem style={{ justifyContent: "center" }}>
+                  <Avatar
+                    alt = "Saurabh Takle"
+                    variant = "circle"
+                    src = 'src\Assets\website_image'>
+
+                  </Avatar>
+                </ListItem>
+                <ListItem style={{ textAlign: "center", justifyContent: "center" }}>
+                  <Typography variant = "h4">Saurabh Takle</Typography>
+                </ListItem>
+                <Divider/>
+                <ListItem style={{ justifyContent: "center" }}>
+                  <Button
+                    color="primary"
+                    to="/"
+                    component={Link}
+                    variant="text"
+                  >
+                    About
+                  </Button>
+                </ListItem>
+                <ListItem style={{ justifyContent: "center" }}>
+                  <Button
+                    color="primary"
+                    to="/"
+                    component={Link}
+                    variant="text"
+                  >
+                    Experience
+                  </Button>
+                </ListItem>
+                <ListItem style={{ justifyContent: "center" }}>
+                  <Button
+                    color="primary"
+                    to="/"
+                    component={Link}
+                    variant="text"
+                  >
+                    Skills
+                  </Button>
+                </ListItem>
+                <ListItem style={{ justifyContent: "center" }}>
+                  <Button
+                    color="primary"
+                    to="/"
+                    component={Link}
+                    variant="text"
+                  >
+                    Education
+                  </Button>
+                </ListItem>
+                <ListItem style={{ justifyContent: "center" }}>
+                  <Button
+                    color="primary"
+                    to="/"
+                    component={Link}
+                    variant="text"
+                  >
+                    Contact
+                  </Button>
+                </ListItem>
+                <ListItem style={{ justifyContent: "center" }}>
+                  <Button
+                    color="primary"
+                    to="/"
+                    component={Link}
+                    variant="text"
+                  >
+                    About
+                  </Button>
                 </ListItem>
               </List>
             </Grid>
