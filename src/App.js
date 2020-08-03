@@ -56,7 +56,7 @@ function App() {
                 <ListItem >
                   <Button
                     color="primary"
-                    to="/about"
+                    to="/"
                     component={Link}
                     variant="text"
                   >
@@ -117,7 +117,7 @@ function App() {
             </Grid>
             <Grid item xs={12} sm={9}>
                 <Paper style={{ padding: "20px" }}>
-                  <Route path="/about" component={About} />
+                  <Route path="/" component={About} />
                   <Route path="/experience" component={Experience} />
                   <Route path="/projects" component={Projects} />
                   <Route path="/skills" component={Skills} />
