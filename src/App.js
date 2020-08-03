@@ -20,7 +20,6 @@ import About from './components/About';
 import Contact from './components/Contact';
 import Education from './components/Education';
 import Experience from './components/Experience';
-import Home from './components/Home';
 import Projects from './components/Projects';
 import Skills from './components/Skills';
 
@@ -54,16 +53,6 @@ function App() {
                   <Typography>• Student •</Typography>
                 </ListItem>
                 <Divider/>
-                <ListItem >
-                  <Button
-                    color="primary"
-                    to="/"
-                    component={Link}
-                    variant="text"
-                  >
-                    Home
-                  </Button>
-                </ListItem>
                 <ListItem >
                   <Button
                     color="primary"
@@ -128,7 +117,6 @@ function App() {
             </Grid>
             <Grid item xs={12} sm={9}>
                 <Paper style={{ padding: "20px" }}>
-                  <Route exact path="/" component={Home} />
                   <Route path="/about" component={About} />
                   <Route path="/experience" component={Experience} />
                   <Route path="/projects" component={Projects} />
