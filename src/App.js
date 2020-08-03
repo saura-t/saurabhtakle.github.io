@@ -15,7 +15,7 @@ function App() {
                   <Avatar
                     alt = "Saurabh Takle"
                     variant = "circle"
-                    src = 'src\Assets\website_image'>
+                    src = 'src/Assets/website_image.jpg'>
 
                   </Avatar>
                 </ListItem>
