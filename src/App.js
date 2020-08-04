@@ -103,7 +103,7 @@ function App() {
                     Education
                   </Button>
                 </ListItem>
-                <ListItem >
+                {/* <ListItem >
                   <Button
                     color="primary"
                     to="/contact"
@@ -112,7 +112,7 @@ function App() {
                   >
                     Contact
                   </Button>
-                </ListItem>
+                </ListItem> */}
               </List>
             </Grid>
             <Grid item xs={12} sm={9}>

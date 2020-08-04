@@ -1,5 +1,7 @@
 import React from 'react'
-import { Card, Typography, Divider, Link } from "@material-ui/core";
+import { Card, Typography, Divider, IconButton } from "@material-ui/core";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faGithub, faLinkedin } from "@fortawesome/free-brands-svg-icons";
 
 const About = (props) => {
   return(
@@ -16,7 +18,7 @@ const About = (props) => {
       </Typography>
       <br/>
       <Typography>
-        ♦ Excellent in verbal and written communication with competitive mind, which pushes me to go over limits to achieve big things.
+        ♦ Excellent in verbal and written communication with competitive mind, which keeps me motivated to go over limits to achieve big things.
       </Typography>
       <br/>
       <Typography>
@@ -26,9 +28,15 @@ const About = (props) => {
       <Typography>
         ♦ Current Focus : Competitive Programming // Image Classification
       </Typography>
+      <Divider style={{margin: "20px"}} />
+      <IconButton href="https://github.com/saurabhtakle/" target="_blank">
+        <FontAwesomeIcon icon={faGithub} />
+      </IconButton>
+      <IconButton href="https://www.linkedin.com/in/saurabh-takle-a6420116a/" target="_blank">
+        <FontAwesomeIcon icon={faLinkedin} />
+      </IconButton>
     </div>
    )
-
  }
 
 export default About

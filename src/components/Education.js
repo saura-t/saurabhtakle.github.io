@@ -38,7 +38,7 @@ const Education = (props) => {
         </Typography>
         <br/>
         <Typography>
-          🎓 6.93 GPA (till-date)
+          🎓 6.93 CGPA (till-date)
         </Typography>
       </Card>
     </div>

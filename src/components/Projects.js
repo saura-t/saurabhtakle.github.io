@@ -65,19 +65,14 @@ const Projects = (props) => {
           <div className={grids.paper}>
             <Card className={classes.root}>
               <CardHeader
-                avatar={
-                  <Avatar aria-label="recipe" className={classes.avatar}>
-                    C
-                  </Avatar>
-                }
+                avatar={<Avatar className={classes.avatar}>C</Avatar>}
                 title="College Portal"
                 subheader="September 23, 2019"/>
               <CardMedia
                 className={classes.media}
-                image={cp}
-                title="Paella dish"/>
+                image={cp}/>
               <CardActions disableSpacing>
-                <IconButton href="https://github.com/saurabhtakle/Website-College-Portal">
+                <IconButton href="https://github.com/saurabhtakle/Website-College-Portal" target="_blank">
                   <FontAwesomeIcon icon={faGithub} style={{margin: "5px"}} />
                 </IconButton>
                 <IconButton
@@ -107,7 +102,7 @@ const Projects = (props) => {
           <div className={grids.paper}>
             <Card className={classes.root}>
               <CardHeader
-                avatar={<Avatar aria-label="recipe" className={classes.avatar}>T</Avatar>}
+                avatar={<Avatar className={classes.avatar}>T</Avatar>}
                 title="Tweet Search"
                 subheader="May 29, 2019"/>
               <CardMedia
@@ -115,7 +110,7 @@ const Projects = (props) => {
                 image={tweet}
                 title="Paella dish"/>
               <CardActions disableSpacing>
-              <IconButton href="https://github.com/saurabhtakle/Twitter-API">
+              <IconButton href="https://github.com/saurabhtakle/Twitter-API" target="_blank">
                   <FontAwesomeIcon icon={faGithub} style={{margin: "5px"}} />
                 </IconButton>
                 <IconButton

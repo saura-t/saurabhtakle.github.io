@@ -1,5 +1,7 @@
 import React from 'react'
-import { Typography, Divider, Grid, Paper, makeStyles } from "@material-ui/core";
+import { Typography, Divider, Grid, Paper, makeStyles, Link } from "@material-ui/core";
+import { faExternalLinkAlt } from "@fortawesome/free-solid-svg-icons";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
 const useStyles = makeStyles((theme) => ({
   root: {
@@ -21,7 +23,11 @@ const Experience = (props) => {
       <Grid container className={classes.root}>
         <Grid item xs={12}>
           <Paper className={classes.paper}>
-            <Typography align="left" variant="h5">Lazytech Infotech Soln.</Typography>
+            <Link href="http://lazytech.in/" target="_blank" underline="none" color="inherit">
+              <Typography align="left" variant="h5">Lazytech Infotech Soln.
+                <FontAwesomeIcon icon={faExternalLinkAlt} style={{padding: "5px"}}></FontAwesomeIcon>
+              </Typography>
+            </Link>
             <Typography align="left" variant="body1" color="textSecondary">Android Developer Intern (Jun 2019 - Aug 2019)</Typography>
             <Divider style={{margin: "20px 0px"}} />
             <Typography variant="body1">
