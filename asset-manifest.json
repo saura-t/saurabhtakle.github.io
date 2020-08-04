@@ -1,27 +1,34 @@
 {
   "files": {
     "main.css": "/static/css/main.69eda509.chunk.css",
-    "main.js": "/static/js/main.2cedb6c0.chunk.js",
-    "main.js.map": "/static/js/main.2cedb6c0.chunk.js.map",
+    "main.js": "/static/js/main.884d112c.chunk.js",
+    "main.js.map": "/static/js/main.884d112c.chunk.js.map",
     "runtime-main.js": "/static/js/runtime-main.42c3d899.js",
     "runtime-main.js.map": "/static/js/runtime-main.42c3d899.js.map",
-    "static/js/2.5da663e5.chunk.js": "/static/js/2.5da663e5.chunk.js",
-    "static/js/2.5da663e5.chunk.js.map": "/static/js/2.5da663e5.chunk.js.map",
+    "static/js/2.99269e70.chunk.js": "/static/js/2.99269e70.chunk.js",
+    "static/js/2.99269e70.chunk.js.map": "/static/js/2.99269e70.chunk.js.map",
     "index.html": "/index.html",
-    "precache-manifest.8266d684a0b9e96822e906cf435f94a1.js": "/precache-manifest.8266d684a0b9e96822e906cf435f94a1.js",
+    "precache-manifest.2ab83260b7f3d719800212d9186fcd86.js": "/precache-manifest.2ab83260b7f3d719800212d9186fcd86.js",
     "service-worker.js": "/service-worker.js",
     "static/css/main.69eda509.chunk.css.map": "/static/css/main.69eda509.chunk.css.map",
-    "static/js/2.5da663e5.chunk.js.LICENSE.txt": "/static/js/2.5da663e5.chunk.js.LICENSE.txt",
+    "static/js/2.99269e70.chunk.js.LICENSE.txt": "/static/js/2.99269e70.chunk.js.LICENSE.txt",
+    "static/media/bootstrap.png": "/static/media/bootstrap.64aaeb16.png",
+    "static/media/cp.png": "/static/media/cp.3a80c343.png",
+    "static/media/cpp.png": "/static/media/cpp.8f42e018.png",
     "static/media/css3.png": "/static/media/css3.9b9b0f98.png",
     "static/media/html5.png": "/static/media/html5.96edbc3e.png",
     "static/media/linux.png": "/static/media/linux.96643270.png",
+    "static/media/mysql.png": "/static/media/mysql.39688422.png",
+    "static/media/photoshop.png": "/static/media/photoshop.f3337980.png",
+    "static/media/python.png": "/static/media/python.8eefa0a8.png",
     "static/media/tf.png": "/static/media/tf.db6aae0d.png",
+    "static/media/twitter.jpg": "/static/media/twitter.0b5cf10e.jpg",
     "static/media/website_image.jpg": "/static/media/website_image.dacd12db.jpg"
   },
   "entrypoints": [
     "static/js/runtime-main.42c3d899.js",
-    "static/js/2.5da663e5.chunk.js",
+    "static/js/2.99269e70.chunk.js",
     "static/css/main.69eda509.chunk.css",
-    "static/js/main.2cedb6c0.chunk.js"
+    "static/js/main.884d112c.chunk.js"
   ]
 }
