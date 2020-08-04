@@ -43,7 +43,7 @@ function App() {
     <React.Fragment>
       <CssBaseline />
       <Container>
-        <Grid container spacing={3}>
+        <Grid container spacing={10}>
           <HashRouter basename = "/">
             <Grid item xs={12} sm={2}>
               <List>

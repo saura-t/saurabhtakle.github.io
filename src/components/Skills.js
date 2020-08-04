@@ -4,11 +4,17 @@ import { Typography, Card, Divider, Avatar, makeStyles, Link } from "@material-u
 import html5 from '../Assets/html5.png';
 import css3 from '../Assets/css3.png';
 import react from '../Assets/react.png';
+import bs from '../Assets/bootstrap.png'
 import psql from '../Assets/postgre.png';
 import tf from '../Assets/tf.png';
 import keras from '../Assets/keras.jpg';
 import win10 from '../Assets/win10.jpg';
 import linux from '../Assets/linux.png';
+import mysql from '../Assets/mysql.png';
+import python from '../Assets/python.png';
+import cpp from '../Assets/cpp.png';
+import git from '../Assets/git.png';
+import ps from '../Assets/photoshop.png';
 
 const useStyles = makeStyles((theme) => ({
   root: {
@@ -47,8 +53,12 @@ const Skills = (props) => {
             <Typography align='center'>CSS3</Typography>
           </div>
           <div style={{padding: "20px"}}>
+            <Avatar alt="Bootstrap" src={bs} className={classes.large}/>
+            <Typography align='center'>Bootstrap</Typography>
+          </div>
+          <div style={{padding: "20px"}}>
             <Avatar alt="react" src={react} className={classes.large}/>
-            <Typography align='center'>REACT JS</Typography>
+            <Typography align='center'>React JS</Typography>
           </div>
         </div>
       </Card>
@@ -61,8 +71,12 @@ const Skills = (props) => {
         <Divider style={{margin: "20px 0px"}}/>
         <div style={{display: "flex", flexDirection: "row", justifyContent: "flex-start"}}>
           <div style={{padding: "20px"}}>
-            <Avatar alt="PHP" src={psql} className={classes.large}/>
+            <Avatar alt="PostgreSQL" src={psql} className={classes.large}/>
             <Typography align='center'>PostgreSQL</Typography>
+          </div>
+          <div style={{padding: "20px"}}>
+            <Avatar alt="mysql" src={mysql} className={classes.large}/>
+            <Typography align='center'>MySQL</Typography>
           </div>
         </div>
       </Card>
@@ -88,17 +102,35 @@ const Skills = (props) => {
         <Typography 
           variant="h5"
           style={{padding: "0px 10px 0px 0px"}}>
+          Lanfuage Proficiency
+        </Typography>
+        <Divider style={{margin: "20px 0px"}}/>
+        <div style={{display: "flex", flexDirection: "row", justifyContent: "flex-start"}}>
+          <div style={{padding: "20px"}}>
+            <Avatar alt="Python" src={python} className={classes.large}/>
+            <Typography align='center'>Python</Typography>
+          </div>
+          <div style={{padding: "20px"}}>
+            <Avatar alt="C++" src={cpp} className={classes.large}/>
+            <Typography align='center'>C++</Typography>
+          </div>
+        </div>
+      </Card>
+      <Card style={{padding: "20px"}} variant="outlined">
+        <Typography 
+          variant="h5"
+          style={{padding: "0px 10px 0px 0px"}}>
           Operating System
         </Typography>
         <Divider style={{margin: "20px 0px"}}/>
         <div style={{display: "flex", flexDirection: "row", justifyContent: "flex-start"}}>
           <div style={{padding: "20px"}}>
             <Avatar alt="Windows 10" src={win10} className={classes.large}/>
-            <Typography align='center'>WINDOWS 10</Typography>
+            <Typography align='center'>Windows 10</Typography>
           </div>
           <div style={{padding: "20px"}}>
             <Avatar alt="Linux" src={linux} className={classes.large}/>
-            <Typography align='center'>LINUX</Typography>
+            <Typography align='center'>Linux</Typography>
           </div>
         </div>
       </Card>
@@ -111,12 +143,12 @@ const Skills = (props) => {
         <Divider style={{margin: "20px 0px"}}/>
         <div style={{display: "flex", flexDirection: "row", justifyContent: "flex-start"}}>
           <div style={{padding: "20px"}}>
-            <Avatar alt="Windows 10" src={win10} className={classes.large}/>
-            <Typography align='center'>WINDOWS 10</Typography>
+            <Avatar alt="Git" src={git} className={classes.large}/>
+            <Typography align='center'>Git</Typography>
           </div>
           <div style={{padding: "20px"}}>
-            <Avatar alt="Linux" src={linux} className={classes.large}/>
-            <Typography align='center'>LINUX</Typography>
+            <Avatar alt="photoshop" src={ps} className={classes.large}/>
+            <Typography align='center'>Photoshop</Typography>
           </div>
         </div>
       </Card>
