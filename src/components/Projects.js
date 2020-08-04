@@ -62,7 +62,7 @@ const Projects = (props) => {
       <Divider style={{margin: "20px 0px"}}/>
       <Grid container className={grids.root} >
         <Grid item xs={12} sm={6}>
-          <Paper className={grids.paper}>
+          <div className={grids.paper}>
             <Card className={classes.root}>
               <CardHeader
                 avatar={
@@ -101,10 +101,10 @@ const Projects = (props) => {
                 </CardContent>
               </Collapse>
             </Card>
-          </Paper>
+          </div>
         </Grid>
         <Grid item xs={12} sm={6}>
-          <Paper className={grids.paper}>
+          <div className={grids.paper}>
             <Card className={classes.root}>
               <CardHeader
                 avatar={<Avatar aria-label="recipe" className={classes.avatar}>T</Avatar>}
@@ -139,7 +139,7 @@ const Projects = (props) => {
                 </CardContent>
               </Collapse>
             </Card>
-          </Paper>
+          </div>
         </Grid>
       </Grid>
     </div>
