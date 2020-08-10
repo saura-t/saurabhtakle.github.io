@@ -37,7 +37,7 @@ const Experience = (props) => {
               ♦ Developed UI/UX in Easy Room Point, it shows nearby rooms available for rent.
             </Typography>
             <Typography variant="body1">
-              ♦ Improved calender widget and overall experience. 
+              ♦ Improved calendar widget and overall experience. 
             </Typography>
           </Paper>
         </Grid>
